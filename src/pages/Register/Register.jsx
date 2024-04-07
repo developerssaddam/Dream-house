@@ -1,9 +1,14 @@
-
+import { Helmet } from "react-helmet-async";
 
 const Register = () => {
   return (
-    <div>Register</div>
-  )
-}
+    <div>
+      <Helmet>
+        <title>Dream Houses | Register</title>
+      </Helmet>
+      Register
+    </div>
+  );
+};
 
-export default Register
+export default Register;
