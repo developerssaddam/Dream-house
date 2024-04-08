@@ -46,7 +46,7 @@ const Register = () => {
       </Helmet>
 
       <div className="w-full mx-auto my-10 max-w-md p-8 space-y-3 rounded-xl bg-[#030637] text-gray-400">
-        <h1 className="text-2xl font-bold text-center">Register Now</h1>
+        <h1 className="text-2xl font-bold text-center text-white">Register Now</h1>
         <form onSubmit={handleRegister} className="space-y-6">
           <div className="space-y-1 text-sm">
             <label className="block">Your Name</label>
@@ -99,14 +99,14 @@ const Register = () => {
             <label className="block">Accept Term & Conditions</label>
           </div>
 
-          <button className="block w-full p-3 text-center text-white rounded-sm bg-[#FF385C]">
+          <button className="block w-full p-3 text-center text-white rounded-sm bg-[#A78BFA]">
             Register
           </button>
         </form>
 
         <p className="text-xs text-center sm:px-6">
-          Already have an account?
-          <Link to="/login" className="underline text-white">
+          Already have an account? {" "}
+          <Link to="/login" className="underline text-[#A78BFA]">
             Login
           </Link>
         </p>

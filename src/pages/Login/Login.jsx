@@ -38,7 +38,7 @@ const Login = () => {
 
       <div>
         <div className="w-full mx-auto my-10 max-w-md p-8 space-y-3 rounded-xl bg-[#030637] text-gray-400">
-          <h1 className="text-2xl font-bold text-center">Login</h1>
+          <h1 className="text-2xl font-bold text-center text-white">Login</h1>
           <form
             onSubmit={handleLoginWithEmailAndPassword}
             className="space-y-6"
@@ -72,7 +72,7 @@ const Login = () => {
                 </a>
               </div>
             </div>
-            <button className="block w-full p-3 text-center rounded-sm bg-[#FF385C] text-white">
+            <button className="block w-full p-3 text-center rounded-sm bg-[#A78BFA] text-white">
               Sign in
             </button>
           </form>
@@ -116,8 +116,8 @@ const Login = () => {
             </button>
           </div>
           <p className="text-xs text-center sm:px-6 text-gray-400">
-            Don`t have an account?
-            <Link to="/register" className="underline text-white">
+            Don`t have an account? {" "}
+            <Link to="/register" className="underline text-[#A78BFA]">
               Register
             </Link>
           </p>
