@@ -2,6 +2,8 @@ import { Helmet } from "react-helmet-async";
 
 import "./Home.css";
 import Slider from "../../components/Slider/Slider";
+import LocationMap from "../../components/LocationMap/LocationMap";
+import PropertyCard from "../../components/PropertyCard/PropertyCard";
 
 const Home = () => {
   return (
@@ -9,8 +11,16 @@ const Home = () => {
       <Helmet>
         <title>Dream Houses | Home</title>
       </Helmet>
-      <div className="">
-        <Slider />
+      <Slider />
+      <div className="my-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <PropertyCard />
+        <PropertyCard />
+        <PropertyCard />
+        <PropertyCard />
+        <PropertyCard />
+      </div>
+      <div className="my-5">
+        <LocationMap />
       </div>
     </>
   );
