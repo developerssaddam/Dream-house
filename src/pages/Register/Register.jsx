@@ -1,13 +1,18 @@
 import { Helmet } from "react-helmet-async";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { IoEyeOffOutline, IoEyeOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
+import { AuthContext } from "../../providers/AuthProviders";
+import { updateProfile } from "firebase/auth";
 
 const Register = () => {
   const [showPassword, setShowPassword] = useState(false);
   const navigate = useNavigate();
+  const passCheck = /(?=.*[A-Z])(?=.*[a-z]){6,}/;
+
+  const { createUser } = useContext(AuthContext);
 
   // handleShowHidePassword.
   const handleShowHidePassword = () => {
@@ -17,26 +22,42 @@ const Register = () => {
   // handleRegister.
   const handleRegister = (e) => {
     e.preventDefault();
-    const data = new FormData(e.currentTarget);
-    const name = data.get("name");
-    const email = data.get("email");
-    const photo = data.get("photo");
-    const password = data.get("password");
-    // const terms = data.get("terms");
 
-    // createUser(email, password)
-    //   .then((result) => {
-    //     updateProfile(result.user, {
-    //       displayName: name,
-    //       photoURL: photo,
-    //     });
-    //     toast.success("User registration successfull!");
-    //     e.target.reset();
-    //     navigate("/login");
-    //   })
-    //   .catch((error) => {
-    //     toast.warn(error.message);
-    //   });
+    const name = e.target.name.value;
+    const email = e.target.email.value;
+    const photo = e.target.photo.value;
+    const password = e.target.password.value;
+    const terms = e.target.terms.checked;
+
+    // Validation.
+    if (!name || !email || !photo || !password) {
+      return toast.warn("All fields are required!");
+    }
+
+    if (!terms) {
+      return toast.warn("Accept terms & conditions!");
+    }
+
+    // Check Password.
+    if (!passCheck.test(password)) {
+      return toast.warn(
+        "Password must be at least six character with lowercase and uppercase letter!"
+      );
+    }
+
+    createUser(email, password)
+      .then((result) => {
+        updateProfile(result.user, {
+          displayName: name,
+          photoURL: photo,
+        });
+        toast.success("User registration successfull!");
+        e.target.reset();
+        navigate("/login");
+      })
+      .catch((error) => {
+        toast.warn(error.message);
+      });
   };
 
   return (
@@ -46,7 +67,9 @@ const Register = () => {
       </Helmet>
 
       <div className="w-full mx-auto my-10 max-w-md p-8 space-y-3 rounded-xl bg-[#030637] text-gray-400">
-        <h1 className="text-2xl font-bold text-center text-white">Register Now</h1>
+        <h1 className="text-2xl font-bold text-center text-white">
+          Register Now
+        </h1>
         <form onSubmit={handleRegister} className="space-y-6">
           <div className="space-y-1 text-sm">
             <label className="block">Your Name</label>
@@ -59,21 +82,21 @@ const Register = () => {
           </div>
 
           <div className="space-y-1 text-sm">
-            <label className="block">Photo URL</label>
-            <input
-              type="text"
-              name="photo"
-              placeholder="Photo URL"
-              className="w-full px-4 py-3 rounded-md border-gray-700 bg-[#1F2544] focus:border-violet-400"
-            />
-          </div>
-
-          <div className="space-y-1 text-sm">
             <label className="block">Email</label>
             <input
               type="text"
               name="email"
               placeholder="Email"
+              className="w-full px-4 py-3 rounded-md border-gray-700 bg-[#1F2544] focus:border-violet-400"
+            />
+          </div>
+
+          <div className="space-y-1 text-sm">
+            <label className="block">Photo URL</label>
+            <input
+              type="text"
+              name="photo"
+              placeholder="Photo URL"
               className="w-full px-4 py-3 rounded-md border-gray-700 bg-[#1F2544] focus:border-violet-400"
             />
           </div>
@@ -105,7 +128,7 @@ const Register = () => {
         </form>
 
         <p className="text-xs text-center sm:px-6">
-          Already have an account? {" "}
+          Already have an account?{" "}
           <Link to="/login" className="underline text-[#A78BFA]">
             Login
           </Link>

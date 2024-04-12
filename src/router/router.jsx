@@ -4,6 +4,11 @@ import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import Home from "../pages/Home/Home";
 import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
+import UpdateProfile from "../pages/UpdateProfile/UpdateProfile";
+import AboutUs from "../pages/AboutUs/AboutUs";
+import ContactUs from "../pages/ContactUs/ContactUs";
+import Profile from "../pages/Profile/Profile";
+import ProtectedRoute from "./ProtectedRoute";
 
 const router = createBrowserRouter([
   {
@@ -24,6 +29,39 @@ const router = createBrowserRouter([
       {
         path: "/register",
         element: <Register />,
+      },
+
+      {
+        path: "/about",
+        element: <AboutUs />,
+      },
+
+      {
+        path: "/contact",
+        element: <ContactUs />,
+      },
+
+      {
+        path: "/update/profile",
+        element: (
+          <ProtectedRoute>
+            <UpdateProfile />
+          </ProtectedRoute>
+        ),
+      },
+
+      {
+        path: "/profile",
+        element: (
+          <ProtectedRoute>
+            <Profile />
+          </ProtectedRoute>
+        ),
+      },
+
+      {
+        path: "/logout",
+        element: <UpdateProfile />,
       },
     ],
   },

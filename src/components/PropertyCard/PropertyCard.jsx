@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 const PropertyCard = () => {
   return (
     <div className="border shadow-lg rounded-lg relative">
-      <div className="status absolute right-5 top-5 text-white bg-[#FF385C] px-6 py-2 font-semibold rounded-md font_lato">
+      <div className="status absolute right-5 top-5 text-white bg-[#a106d0] px-6 py-2 font-semibold rounded-md font_lato">
         For Sale
       </div>
       <div className="property_card_item ">
@@ -20,60 +20,58 @@ const PropertyCard = () => {
         />
 
         <div className="card_content p-4 text-[#747376] space-y-3">
-          <h2 className="title text-xl font-bold text-[#2B2A4C]">
+          <h2 className="title text-lg font-bold text-[#2B2A4C]">
             Real House Lauxary Villa
           </h2>
           <h3 className="text-[#232323] text-lg font-medium font_lato">
             segment_name
           </h3>
           <p className="desc font_lato">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
-            reprehenderit magni voluptatibus, odit quas neque
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequuntur reprehenderit veniam, maxime culpa labore obcaecati.
           </p>
 
-          <div className="facilities">
-            <ul className="gap-1 flex flex-col text-[#2B2A4C] border-b pb-3">
+          <Link className="flex gap-2 items-center">
+            <IoLocation />
+            <span>Location</span>
+          </Link>
+
+          <div className="facilities  border-b pb-3">
+            <ul className="grid grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-1 text-sm">
               <li className="flex gap-2 items-center">
-                <MdOutlineBedroomChild className="text-xl" />
+                <MdOutlineBedroomChild className="font-medium" />
                 <p>
-                  <span>2</span>Living Room
+                  <span>2</span> BedRooms
                 </p>
               </li>
 
               <li className="flex gap-2 items-center">
-                <LiaSwimmerSolid className="text-xl" />
+                <LiaSwimmerSolid className="font-medium" />
                 <p>
-                  <span>1</span> swimming pool
+                  <span>1</span> SwimmingPool
                 </p>
               </li>
-
               <li className="flex gap-2 items-center">
-                <FaKitchenSet className="text-xl" />
+                <FaKitchenSet className="font-medium" />
                 <p>
                   <span>2</span> Kitchen
                 </p>
               </li>
 
               <li className="flex gap-2 items-center">
-                <LuTriangleRight className="text-xl" />
+                <LuTriangleRight className="font-medium" />
                 <p>
                   <span>720</span>sq ft
                 </p>
               </li>
-
-              <li className="flex gap-2 items-center">
-                <Link className="flex gap-2 items-center">
-                  <IoLocation />
-                  <span>Location</span>
-                </Link>
-              </li>
             </ul>
           </div>
+
           <div className="flex items-center justify-between pt-1">
             <p className="font-medium text-[#2B2A4C]">
               $ <span>9999077</span>
             </p>
-            <button className="text-white bg-[#FF385C] px-4 py-2 font-semibold rounded-md font_lato">
+            <button className="text-white bg-[#491272] px-4 py-2 font-semibold rounded-md font_lato">
               View Details
             </button>
           </div>
