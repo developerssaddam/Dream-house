@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { AuthContext } from "../../providers/AuthProviders";
 import { updateProfile } from "firebase/auth";
+import "animate.css";
 
 const Register = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -67,7 +68,7 @@ const Register = () => {
       </Helmet>
 
       <div className="w-full mx-auto my-10 max-w-md p-8 space-y-3 rounded-xl bg-[#FFFFFF] shadow-lg">
-        <h1 className="text-3xl font-bold text-center mb-5">
+        <h1 className="text-3xl font-bold text-center mb-5 animate__animated animate__bounceInLeft">
           Register Now
         </h1>
         <form onSubmit={handleRegister} className="space-y-6">

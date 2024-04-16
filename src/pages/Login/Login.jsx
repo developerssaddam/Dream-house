@@ -5,6 +5,7 @@ import { useContext, useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { toast } from "react-toastify";
 import { AuthContext } from "../../providers/AuthProviders";
+import "animate.css";
 
 const Login = () => {
   const { userLogin, loginWithGoogle, loginWithGithub, loginWithTwitter } =
@@ -73,7 +74,7 @@ const Login = () => {
 
       <div className="bg-[#F5F7FB]  py-10">
         <div className="w-full mx-auto max-w-md p-8 space-y-3 rounded-xl bg-[#FFFFFF] shadow-lg">
-          <h1 className="text-2xl font-bold text-center text-gray-900">
+          <h1 className="text-2xl font-bold text-center text-gray-900 animate__animated animate__bounceInLeft">
             Login Form
           </h1>
           <form

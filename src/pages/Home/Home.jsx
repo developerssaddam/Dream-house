@@ -24,7 +24,6 @@ const Home = () => {
           <PropertyCard data={item} key={index} />
         ))}
       </div>
-
       <AgentContainer />
     </>
   );

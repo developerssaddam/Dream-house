@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProviders";
 import { Helmet } from "react-helmet-async";
+import 'animate.css';
 
 const Profile = () => {
   const { user } = useContext(AuthContext);
@@ -11,7 +12,7 @@ const Profile = () => {
         <title>Dream Houses | Profile</title>
       </Helmet>
       <div className="flex flex-col justify-center max-w-xs p-6 shadow-md rounded-xl sm:px-12 bg-[#FFF]">
-        <h2 className="text-xl font-semibold text-center mb-5">
+        <h2 className="text-xl font-semibold text-center mb-5 animate__animated animate__bounce">
           Profile Details
         </h2>
         <img

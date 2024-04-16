@@ -3,6 +3,7 @@ import { AuthContext } from "../../providers/AuthProviders";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import 'animate.css';
 
 const UpdateProfile = () => {
   const { user, profileUpdate } = useContext(AuthContext);
@@ -45,7 +46,7 @@ const UpdateProfile = () => {
           className="container md:w-1/3 flex flex-col mx-auto bg-white shadow-lg border"
         >
           <fieldset className="rounded-md shadow-sm p-6 space-y-3 ">
-            <h2 className="text-3xl font-bold font_lato text-center">
+            <h2 className="text-3xl font-bold font_lato text-center animate__animated animate__backInDown">
               Update Your Profile!
             </h2>
             <div>

@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import "animate.css";
 
 const SectionTitle = ({ title = "", subtitle = "" }) => {
   return (
