@@ -1,6 +1,6 @@
-# Book Vibe
+# Dream Houses
 
-## Live site URL: https://bookvibebydeveloperssaddam.netlify.app/
+## Live site URL: https://dream-houses-c832e.web.app/
 
 - Technology :
 
@@ -16,14 +16,9 @@
     7. Animate.css
 ```
 
-- Sort-By
-
-```base
-    1. Rating
-    2. Number of pages
-    3. Published year
+```Authentication and authorization Features
+    - Responsive For all devices.
+    - User Can Registration with email and password.
+    - User Can Sign up with Google, Twitter, Github.
+    - User Can see and update their profile.
 ```
-
-- Responsive Design
-- User Login System With
-- Bar Charts
