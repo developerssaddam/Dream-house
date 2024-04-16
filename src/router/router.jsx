@@ -9,6 +9,7 @@ import AboutUs from "../pages/AboutUs/AboutUs";
 import ContactUs from "../pages/ContactUs/ContactUs";
 import Profile from "../pages/Profile/Profile";
 import ProtectedRoute from "./ProtectedRoute";
+import ViewDetails from "../pages/ViewDetails/ViewDetails";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+        loader: () => fetch("/data.json"),
       },
 
       {
@@ -60,8 +62,13 @@ const router = createBrowserRouter([
       },
 
       {
-        path: "/logout",
-        element: <UpdateProfile />,
+        path: "/property/details/:id",
+        element: (
+          <ProtectedRoute>
+            <ViewDetails />
+          </ProtectedRoute>
+        ),
+        loader: () => fetch("/data.json"),
       },
     ],
   },

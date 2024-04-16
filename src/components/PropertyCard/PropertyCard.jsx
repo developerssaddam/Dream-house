@@ -1,84 +1,78 @@
 import { IoLocation } from "react-icons/io5";
-import { LuTriangleRight } from "react-icons/lu";
-import { MdOutlineBedroomChild } from "react-icons/md";
-import { LiaSwimmerSolid } from "react-icons/lia";
-import { FaKitchenSet } from "react-icons/fa6";
-import "./PropertyCard.css";
 import { Link } from "react-router-dom";
+import { GoDotFill } from "react-icons/go";
+import { LuTriangleRight } from "react-icons/lu";
+import PropTypes from "prop-types";
+import "./PropertyCard.css";
 
-const PropertyCard = () => {
+const PropertyCard = ({ data }) => {
+  const {
+    id,
+    estate_title,
+    segment_name,
+    description,
+    price,
+    status,
+    area,
+    location,
+    image_url,
+    facilities,
+  } = data;
+
   return (
-    <div className="border shadow-lg rounded-lg relative">
+    <div className="border shadow-lg rounded-lg relative hover:scale-x-105 ease-in duration-200">
       <div className="status absolute right-5 top-5 text-white bg-[#a106d0] px-6 py-2 font-semibold rounded-md font_lato">
-        For Sale
+        For {status}
       </div>
-      <div className="property_card_item ">
-        <img
-          className="w-full rounded-t-lg"
-          src="https://media.istockphoto.com/id/1255835530/photo/modern-custom-suburban-home-exterior.jpg?s=612x612&w=0&k=20&c=0Dqjm3NunXjZtWVpsUvNKg2A4rK2gMvJ-827nb4AMU4="
-          alt=""
-        />
+      <div className="property_card_item min-h-[100%] flex flex-col justify-between">
+        <img className="w-full h-64 rounded-t-lg" src={image_url} alt="" />
 
-        <div className="card_content p-4 text-[#747376] space-y-3">
+        <div className="card_content p-4 text-[#747376] space-y-2">
           <h2 className="title text-lg font-bold text-[#2B2A4C]">
-            Real House Lauxary Villa
+            {estate_title}
           </h2>
           <h3 className="text-[#232323] text-lg font-medium font_lato">
-            segment_name
+            {segment_name}
           </h3>
-          <p className="desc font_lato">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Consequuntur reprehenderit veniam, maxime culpa labore obcaecati.
-          </p>
+          <p className="desc font_lato">{description}</p>
 
-          <Link className="flex gap-2 items-center">
+          <ul className="grid grid-cols-2 md:grid-cols-1 lg:grid-cols-2 text-sm">
+            {facilities.map((item, index) => (
+              <li className="flex items-center gap-1" key={index}>
+                <GoDotFill /> {item}
+              </li>
+            ))}
+          </ul>
+
+          <h2 className="text-lg flex gap-1 items-center">
+            <LuTriangleRight />
+            {area}
+          </h2>
+
+          <Link className="flex gap-2 items-center border-b pb-3">
             <IoLocation />
-            <span>Location</span>
+            <span>{location}</span>
           </Link>
-
-          <div className="facilities  border-b pb-3">
-            <ul className="grid grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-1 text-sm">
-              <li className="flex gap-2 items-center">
-                <MdOutlineBedroomChild className="font-medium" />
-                <p>
-                  <span>2</span> BedRooms
-                </p>
-              </li>
-
-              <li className="flex gap-2 items-center">
-                <LiaSwimmerSolid className="font-medium" />
-                <p>
-                  <span>1</span> SwimmingPool
-                </p>
-              </li>
-              <li className="flex gap-2 items-center">
-                <FaKitchenSet className="font-medium" />
-                <p>
-                  <span>2</span> Kitchen
-                </p>
-              </li>
-
-              <li className="flex gap-2 items-center">
-                <LuTriangleRight className="font-medium" />
-                <p>
-                  <span>720</span>sq ft
-                </p>
-              </li>
-            </ul>
-          </div>
 
           <div className="flex items-center justify-between pt-1">
             <p className="font-medium text-[#2B2A4C]">
-              $ <span>9999077</span>
+              $ <span>{price}</span>
             </p>
-            <button className="text-white bg-[#491272] px-4 py-2 font-semibold rounded-md font_lato">
+            <Link
+              to={`/property/details/${id}`}
+              className="text-white bg-[#491272] px-4 py-2 font-semibold rounded-md font_lato"
+            >
               View Details
-            </button>
+            </Link>
           </div>
         </div>
       </div>
     </div>
   );
+};
+
+PropertyCard.propTypes = {
+  data: PropTypes.object,
 };
 
 export default PropertyCard;

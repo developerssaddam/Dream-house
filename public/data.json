@@ -1,0 +1,146 @@
+[
+  {
+    "id": "1",
+    "estate_title": "Modern Family Home with Spectacular Views",
+    "segment_name": "Suburban Homes",
+    "description": "Stunning views, open floor plan, gourmet kitchen, and landscaped garden in spacious family home.",
+    "long_description": "Welcome to this modern family home nestled in the serene suburbs of Los Angeles. Offering breathtaking views of the surrounding landscape, this home is a haven of tranquility and comfort. Step inside to discover an open and inviting floor plan, with expansive windows that flood the space with natural light and frame picturesque views of the nearby hills. The gourmet kitchen is a chef's dream, boasting high-end appliances, sleek countertops, and ample cabinet space for all your culinary needs. Outside, the landscaped garden provides a peaceful retreat, with lush greenery and colorful blooms creating a beautiful backdrop for outdoor gatherings and relaxation. Whether you're hosting a family barbecue or simply enjoying a quiet evening under the stars, this home offers the perfect blend of indoor and outdoor living. With its unbeatable location and modern amenities, it's the ideal place to call home.",
+    "price": "$850,000",
+    "status": "Sale",
+    "area": "2800 sq ft",
+    "location": "Los Angeles, California",
+    "image_url": "https://i.postimg.cc/fW0RzCjH/one.jpg",
+    "facilities": [
+      "Gourmet Kitchen",
+      "Outdoor Patio",
+      "Swimming Pool",
+      "Attached Garage"
+    ]
+  },
+  {
+    "id": "2",
+    "estate_title": "Cozy Apartment in Vibrant Downtown",
+    "segment_name": "Urban Apartments",
+    "description": "Urban living at its finest with easy access to dining, shopping, and entertainment.",
+    "long_description": "Welcome to your urban sanctuary in the heart of bustling New York City. Situated in a vibrant downtown neighborhood, this cozy apartment offers the perfect blend of convenience and style. Step inside to discover a bright and inviting living space, with modern finishes and plenty of natural light creating a warm and welcoming atmosphere. The open floor plan is ideal for entertaining guests, while the well-appointed kitchen is perfect for whipping up gourmet meals or enjoying a leisurely breakfast at the breakfast bar. Outside, the rooftop terrace offers sweeping views of the city skyline, making it the perfect spot for enjoying a morning coffee or evening cocktail. With its central location and modern amenities, this apartment is the perfect place to experience all that city living has to offer.",
+    "price": "$2,500/month",
+    "status": "Rent",
+    "area": "1000 sq ft",
+    "location": "New York City, New York",
+    "image_url": "https://i.postimg.cc/BvMXFvXM/2.jpg",
+    "facilities": [
+      "Fitness Center",
+      "Rooftop Terrace",
+      "24/7 Security",
+      "Pet-Friendly"
+    ]
+  },
+  {
+    "id": "3",
+    "estate_title": "Luxury Villa with Private Pool",
+    "segment_name": "Luxury Villas",
+    "description": "Indulge in luxury living with private pool, lush gardens, spacious interiors, and panoramic views.",
+    "long_description": "Escape to your own private paradise in this luxurious villa located in sunny Miami. Set amidst lush gardens and offering panoramic views of the surrounding landscape, this villa is the epitome of luxury living. Step inside to discover a grand foyer that leads into the expansive living space, where floor-to-ceiling windows offer breathtaking views of the surrounding landscape. The gourmet kitchen is a chef's dream, featuring top-of-the-line appliances, custom cabinetry, and a large island perfect for entertaining. Retreat to the master suite, where you'll find a luxurious bedroom, spa-like bathroom, and private balcony overlooking the sparkling pool below. Outside, the meticulously landscaped garden provides the perfect backdrop for outdoor entertaining, with a pool, spa, and outdoor kitchen creating a serene retreat for relaxation and enjoyment. With its unparalleled luxury and amenities, this villa offers the ultimate in upscale living.",
+    "price": "$1,200,000",
+    "status": "Sale",
+    "area": "3500 sq ft",
+    "location": "Miami, Florida",
+    "image_url": "https://i.postimg.cc/gksJQJKd/3.avif",
+    "facilities": [
+      "Private Pool",
+      "Gated Community",
+      "Home Theater",
+      "Outdoor Kitchen"
+    ]
+  },
+  {
+    "id": "4",
+    "estate_title": "Charming Townhouse in Historic District",
+    "segment_name": "Historic Homes",
+    "description": "Charming townhouse with original architectural details and modern updates in prime historic district.",
+    "long_description": "Step back in time and experience the charm of yesteryear in this historic townhouse located in the heart of Boston's historic district. Dating back to the 19th century, this home boasts original architectural details such as hardwood floors, crown molding, and decorative fireplace mantels, while also offering modern updates for today's lifestyle. The spacious living room is perfect for entertaining guests, while the updated kitchen features stainless steel appliances, granite countertops, and ample cabinet space for all your culinary needs. Upstairs, you'll find three cozy bedrooms, each offering its own unique charm and character. Outside, the private courtyard provides a peaceful retreat from the hustle and bustle of city life, with mature trees and colorful blooms creating a picturesque backdrop for outdoor gatherings and relaxation. With its prime location and historic charm, this townhouse is a true gem.",
+    "price": "$650,000",
+    "status": "Sale",
+    "area": "2000 sq ft",
+    "location": "Boston, Massachusetts",
+    "image_url": "https://i.postimg.cc/yxN5Nv2L/4.jpg",
+    "facilities": [
+      "Fireplace",
+      "Hardwood Floors",
+      "Private Courtyard",
+      "Close to Public Transit"
+    ]
+  },
+  {
+    "id": "5",
+    "estate_title": "Scenic Lakeside Cottage",
+    "segment_name": "Lakefront Properties",
+    "description": "Escape to nature in this scenic lakeside cottage surrounded by tranquil waters and lush forests.",
+    "long_description": "Experience the beauty of lakeside living in this charming cottage nestled on the shores of scenic Lake Washington. Surrounded by tranquil waters and lush forests, this cottage offers the perfect retreat from the hustle and bustle of city life. Step inside to discover a cozy living space, complete with a wood-burning fireplace and panoramic windows that frame the stunning views outside. The fully equipped kitchen is perfect for preparing home-cooked meals, while the spacious deck offers the ideal spot for outdoor dining or simply soaking up the sunshine. Outside, the private dock provides easy access to the lake, making it perfect for fishing, boating, and water sports. With its idyllic setting and cozy charm, this lakeside cottage is the perfect getaway for those seeking peace and relaxation.",
+    "price": "$500,000",
+    "status": "Sale",
+    "area": "1500 sq ft",
+    "location": "Seattle, Washington",
+    "image_url": "https://i.postimg.cc/Y2fY2txD/5.jpg",
+    "facilities": [
+      "Private Dock",
+      "Outdoor Deck",
+      "Fire Pit",
+      "Fishing and Boating Access"
+    ]
+  },
+  {
+    "id": "6",
+    "estate_title": "Spacious Family Home with Mountain Views",
+    "segment_name": "Mountain Homes",
+    "description": "Tranquil mountain living in spacious family home with breathtaking views and modern amenities.",
+    "long_description": "Escape to the tranquility of mountain living in this spacious family home nestled in the scenic foothills of Denver. Surrounded by breathtaking mountain views and pristine natural beauty, this home offers the perfect retreat from the stresses of everyday life. Step inside to discover a spacious and inviting living space, with soaring ceilings, large windows, and a cozy fireplace creating a warm and welcoming atmosphere. The gourmet kitchen is a chef's dream, featuring high-end appliances, custom cabinetry, and a large island perfect for meal prep and entertaining. Outside, the expansive deck offers sweeping views of the surrounding landscape, making it the perfect spot for enjoying your morning coffee or hosting a summer barbecue with friends and family. With its unbeatable location and modern amenities, this mountain home is sure to impress even the most discerning buyer.",
+    "price": "$750,000",
+    "status": "Sale",
+    "area": "3200 sq ft",
+    "location": "Denver, Colorado",
+    "image_url": "https://i.postimg.cc/G2b3Xns9/6-3.jpg",
+    "facilities": [
+      "Mountain Views",
+      "Large Deck",
+      "Gourmet Kitchen",
+      "Close to Hiking Trails"
+    ]
+  },
+  {
+    "id": "7",
+    "estate_title": "Seaside Retreat with Ocean Views",
+    "segment_name": "Coastal Properties",
+    "description": "Escape to this seaside retreat offering stunning ocean views and serene surroundings.",
+    "long_description": "Indulge in the ultimate coastal lifestyle with this stunning seaside retreat located in the picturesque town of San Diego. Offering breathtaking ocean views and serene surroundings, this home is the perfect blend of luxury and relaxation. Step inside to discover a spacious and inviting living space, with floor-to-ceiling windows that frame panoramic views of the Pacific Ocean. The gourmet kitchen is a chef's dream, featuring top-of-the-line appliances, custom cabinetry, and a large island perfect for meal prep and entertaining. Retreat to the master suite, where you'll find a luxurious bedroom, spa-like bathroom, and private balcony overlooking the ocean. Outside, the expansive patio is the perfect spot for soaking up the sunshine or enjoying a meal al fresco with friends and family. With its unbeatable location and luxurious amenities, this coastal property offers the ultimate in seaside living.",
+    "price": "$900,000",
+    "status": "Sale",
+    "area": "2000 sq ft",
+    "location": "San Diego, California",
+    "image_url": "https://i.postimg.cc/B62YQRh5/9-2.jpg",
+    "facilities": [
+      "Beach Access",
+      "Oceanfront Patio",
+      "Spa Bathroom",
+      "Outdoor Shower"
+    ]
+  },
+  {
+    "id": "8",
+    "estate_title": "Classic Colonial Home in Suburban Oasis",
+    "segment_name": "Colonial Houses",
+    "description": "Experience classic charm and modern comfort in this colonial-style home nestled in a suburban oasis.",
+    "long_description": "Experience the timeless elegance of colonial living in this classic home nestled in the heart of Atlanta's suburban oasis. Surrounded by lush greenery and mature trees, this home offers a peaceful retreat from the hustle and bustle of city life. Step inside to discover a spacious and inviting living space, with hardwood floors, crown molding, and a cozy fireplace creating a warm and welcoming atmosphere. The gourmet kitchen is a chef's dream, featuring stainless steel appliances, granite countertops, and ample cabinet space for all your culinary needs. Retreat to the master suite, where you'll find a luxurious bedroom, spa-like bathroom, and private balcony overlooking the landscaped backyard. Outside, the wraparound porch provides the perfect spot for enjoying your morning coffee or watching the sunset with loved ones. With its unbeatable location and timeless charm, this colonial home is sure to impress.",
+    "price": "$600,000",
+    "status": "Sale",
+    "area": "2500 sq ft",
+    "location": "Atlanta, Georgia",
+    "image_url": "https://i.postimg.cc/jdTVN4Pd/8.jpg",
+    "facilities": [
+      "Wraparound Porch",
+      "Hardwood Floors",
+      "Fireplace",
+      "Attached Garage"
+    ]
+  }
+]
