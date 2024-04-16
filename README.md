@@ -15,8 +15,9 @@
     8. React-leaflet
     7. Animate.css
 ```
-
-```Authentication and authorization Features
+   - Authentication and authorization Features
+   
+```
     - Responsive For all devices.
     - User Can Registration with email and password.
     - User Can Sign up with Google, Twitter, Github.
