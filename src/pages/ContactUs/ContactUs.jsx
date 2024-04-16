@@ -1,10 +1,15 @@
+import { Helmet } from "react-helmet-async";
+
 const ContactUs = () => {
   return (
-    <div className="min-h-screen flex justify-center items-center bg-gray-500 text-white">
-      <section className="py-6  w-full">
-        <div className="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
-          <div className="py-6 md:py-0 md:px-6">
-            <h1 className="text-4xl font-bold">READY TO GET STARTED?</h1>
+    <div className="min-h-screen flex justify-center items-center bg-[#F5F7FB] py-20">
+      <Helmet>
+        <title>Dream Houses | Contact us</title>
+      </Helmet>
+      <section className="w-full">
+        <div className="grid max-w-6xl grid-cols-1 mx-auto md:grid-cols-2 md:divide-x">
+          <div className="shadow-lg p-4">
+            <h1 className="text-2xl font-bold">READY TO GET STARTED?</h1>
             <p className="pt-2 pb-4">
               Fill in the form to start a conversation
             </p>
@@ -51,14 +56,14 @@ const ContactUs = () => {
           </div>
           <form
             noValidate=""
-            className="flex flex-col py-6 space-y-6 md:py-0 md:px-6"
+            className="flex flex-col space-y-6 shadow-lg p-4"
           >
             <label className="block">
               <span className="mb-1">Full name</span>
               <input
                 type="text"
                 placeholder="Leroy Jenkins"
-                className="block w-full bg-gray-200 rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-violet-400 p-3 text-gray-700"
+                className="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-violet-400 p-3 text-gray-700"
               />
             </label>
             <label className="block">
@@ -66,19 +71,20 @@ const ContactUs = () => {
               <input
                 type="email"
                 placeholder="leroy@jenkins.com"
-                className="block w-full bg-gray-200 rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-violet-400 p-3 text-gray-700"
+                className="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-violet-400 p-3 text-gray-700"
               />
             </label>
             <label className="block">
               <span className="mb-1">Message</span>
               <textarea
                 rows="3"
-                className="block w-full bg-gray-200 rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-violet-400 p-3 text-gray-700"
+                placeholder="Your Message!"
+                className="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-violet-400 p-3 text-gray-700"
               ></textarea>
             </label>
             <button
               type="button"
-              className="self-center px-8 py-3 text-lg rounded focus:ring hover:ring focus:ring-opacity-75 bg-[#491272] text-white focus:ring-violet-400 hover:ring-violet-400"
+              className="self-center px-8 py-3 text-lg rounded focus:ring hover:ring focus:ring-opacity-75 bg-[#190f38] text-white focus:ring-violet-400 hover:ring-violet-400 w-full"
             >
               Submit
             </button>

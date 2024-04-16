@@ -61,13 +61,13 @@ const Register = () => {
   };
 
   return (
-    <div className="p-3">
+    <div className="p-3 bg-[#F5F7FB]">
       <Helmet>
         <title>Dragon news | Register</title>
       </Helmet>
 
-      <div className="w-full mx-auto my-10 max-w-md p-8 space-y-3 rounded-xl bg-[#030637] text-gray-400">
-        <h1 className="text-2xl font-bold text-center text-white">
+      <div className="w-full mx-auto my-10 max-w-md p-8 space-y-3 rounded-xl bg-[#FFFFFF] shadow-lg">
+        <h1 className="text-3xl font-bold text-center mb-5">
           Register Now
         </h1>
         <form onSubmit={handleRegister} className="space-y-6">
@@ -77,7 +77,7 @@ const Register = () => {
               type="text"
               name="name"
               placeholder="Your Name"
-              className="w-full px-4 py-3 rounded-md border-gray-700 bg-[#1F2544] focus:border-violet-400"
+              className="w-full px-4 py-3 rounded-md border-gray-700 bg-[#F5F7FB] focus:border-violet-400"
             />
           </div>
 
@@ -87,7 +87,7 @@ const Register = () => {
               type="text"
               name="email"
               placeholder="Email"
-              className="w-full px-4 py-3 rounded-md border-gray-700 bg-[#1F2544] focus:border-violet-400"
+              className="w-full px-4 py-3 rounded-md border-gray-700 bg-[#F5F7FB] focus:border-violet-400"
             />
           </div>
 
@@ -97,7 +97,7 @@ const Register = () => {
               type="text"
               name="photo"
               placeholder="Photo URL"
-              className="w-full px-4 py-3 rounded-md border-gray-700 bg-[#1F2544] focus:border-violet-400"
+              className="w-full px-4 py-3 rounded-md border-gray-700 bg-[#F5F7FB] focus:border-violet-400"
             />
           </div>
 
@@ -107,7 +107,7 @@ const Register = () => {
               type={showPassword ? "text" : "password"}
               name="password"
               placeholder="Password"
-              className="w-full px-4 py-3 rounded-md border-gray-700 bg-[#1F2544] focus:border-violet-400"
+              className="w-full px-4 py-3 rounded-md border-gray-700 bg-[#F5F7FB] focus:border-violet-400"
             />
             <span
               onClick={handleShowHidePassword}
@@ -122,7 +122,7 @@ const Register = () => {
             <label className="block">Accept Term & Conditions</label>
           </div>
 
-          <button className="block w-full p-3 text-center text-white rounded-sm bg-[#A78BFA]">
+          <button className="block w-full p-3 text-center text-white rounded-sm bg-[#190f38] hover:bg-[#491272]">
             Register
           </button>
         </form>

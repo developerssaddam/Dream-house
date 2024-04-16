@@ -9,7 +9,7 @@ const AgentContainer = () => {
         subtitle="Our Agents are here to help you"
       />
 
-      <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-5 gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-5">
         <Agent
           image="https://img.freepik.com/free-photo/lifestyle-people-emotions-casual-concept-confident-nice-smiling-asian-woman-cross-arms-chest-confident-ready-help-listening-coworkers-taking-part-conversation_1258-59335.jpg"
           name="Arling Tracy"

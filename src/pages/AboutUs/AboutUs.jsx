@@ -11,10 +11,14 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
+import { Helmet } from "react-helmet-async";
 
 const AboutUs = () => {
   return (
     <div className="relative container mx-auto">
+      <Helmet>
+        <title>Dream Houses | About us</title>
+      </Helmet>
       <div className="absolute text-white top-16 left-16 text-center">
         <h2 className="text-lg font-bold">ABOUT OUR COMPANY</h2>
         <Link to="/" className="text-lg font-bold underline">

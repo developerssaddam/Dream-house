@@ -6,6 +6,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { IoMdMailOpen } from "react-icons/io";
 import { LuTriangleRight } from "react-icons/lu";
 import LocationMap from "../../components/LocationMap/LocationMap";
+import { Helmet } from "react-helmet-async";
 
 const ViewDetails = () => {
   const data = useLoaderData();
@@ -25,6 +26,9 @@ const ViewDetails = () => {
 
   return (
     <div className="bg-[#F5F7FB] container mx-auto">
+      <Helmet>
+        <title>Dream Houses | Property details</title>
+      </Helmet>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 py-10">
         <div className="content lg:col-span-2 p-4">
           {/* content-header */}

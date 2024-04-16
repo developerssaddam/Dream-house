@@ -71,9 +71,11 @@ const Login = () => {
         <title>Dream Houses | Login</title>
       </Helmet>
 
-      <div>
-        <div className="w-full mx-auto my-10 max-w-md p-8 space-y-3 rounded-xl bg-[#030637] text-gray-400">
-          <h1 className="text-2xl font-bold text-center text-white">Login</h1>
+      <div className="bg-[#F5F7FB]  py-10">
+        <div className="w-full mx-auto max-w-md p-8 space-y-3 rounded-xl bg-[#FFFFFF] shadow-lg">
+          <h1 className="text-2xl font-bold text-center text-gray-900">
+            Login Form
+          </h1>
           <form
             onSubmit={handleLoginWithEmailAndPassword}
             className="space-y-6"
@@ -84,7 +86,7 @@ const Login = () => {
                 type="text"
                 name="email"
                 placeholder="Email"
-                className="w-full px-4 py-3 rounded-md border-gray-700 bg-[#1F2544] focus:border-violet-400"
+                className="w-full px-4 py-3 rounded-md border-gray-700 bg-[#F5F7FB] focus:border-violet-400"
               />
             </div>
             <div className="space-y-1 text-sm relative">
@@ -93,7 +95,7 @@ const Login = () => {
                 type={showPassword ? "text" : "password"}
                 name="password"
                 placeholder="Password"
-                className="w-full px-4 py-3 rounded-md border-gray-700 bg-[#1F2544] focus:border-violet-400"
+                className="w-full px-4 py-3 rounded-md border-gray-700 bg-[#F5F7FB] focus:border-violet-400"
               />
               <span
                 onClick={handleShowHidePassword}
@@ -107,7 +109,7 @@ const Login = () => {
                 </a>
               </div>
             </div>
-            <button className="block w-full p-3 text-center rounded-sm bg-[#A78BFA] text-white">
+            <button className="block w-full p-3 text-center rounded-sm bg-[#190F38] text-white hover:bg-[#491272]">
               Sign in
             </button>
           </form>
@@ -122,7 +124,7 @@ const Login = () => {
             <button
               onClick={googleLoginSystem}
               aria-label="Log in with Google"
-              className="p-3 rounded-sm"
+              className="p-3 hover:text-[#FFF] hover:bg-[#36465d] rounded-full"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -135,7 +137,7 @@ const Login = () => {
             <button
               onClick={twitterLoginSystem}
               aria-label="Log in with Twitter"
-              className="p-3 rounded-sm"
+              className="p-3 hover:text-[#FFF] hover:bg-[#36465d] rounded-full"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -148,7 +150,7 @@ const Login = () => {
             <button
               onClick={githubLoginSystem}
               aria-label="Log in with GitHub"
-              className="p-3 rounded-sm"
+              className="p-3 hover:text-[#FFF] hover:bg-[#36465d] rounded-full"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
