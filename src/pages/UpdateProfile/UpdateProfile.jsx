@@ -3,10 +3,10 @@ import { AuthContext } from "../../providers/AuthProviders";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
-import 'animate.css';
+import "animate.css";
 
 const UpdateProfile = () => {
-  const { user, profileUpdate } = useContext(AuthContext);
+  const { user, setUser, profileUpdate } = useContext(AuthContext);
   const navigate = useNavigate();
   const [updateInfo, setUpdateInfo] = useState(user);
 
@@ -26,6 +26,10 @@ const UpdateProfile = () => {
     const photo = updateInfo.photoURL;
     profileUpdate(user, name, photo)
       .then(() => {
+        setUser({
+          name: name,
+          photoURL: photo,
+        });
         toast.success("Profile update successfull!");
         e.target.reset();
         navigate("/");
